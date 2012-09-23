@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'db',                      # Or path to database file if using sqlite3.
+        'NAME': 'db.sqlite',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -144,3 +144,10 @@ LOGGING = {
         },
     }
 }
+
+AWS_ACCESS_KEY_ID = "AKIAI4T52BWZQLN5646A"
+AWS_SECRET_ACCESS_KEY = "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"
+BOTO_S3_BUCKET = "local.upload.foramee.com"
+BOTO_S3_HOST = 's3.amazonaws.com'
+BOTO_BUCKET_LOCATION = 'DEFAULT'
+S3_URL = "http://"+BOTO_S3_HOST+"/"+BOTO_S3_BUCKET+"/"
