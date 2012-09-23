@@ -5,3 +5,5 @@
 /lib
 /local
 /share
+*pyc
+.idea/
